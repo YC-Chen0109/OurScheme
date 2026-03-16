@@ -20,7 +20,7 @@
 * OurSchemeProj2-UTF-8.txt 為 Project 2 的詳細說明，包含了各個指令的功能
 * P2_Proj2.cpp 為 Project 2 的程式碼
 * P2_proj2.exe 為 Project 2 的執行檔
-* testData 為測試的輸入檔案
+* testInput.txt 為測試的輸入檔案
 
 ## 功能
 實作了以下十個功能 (後面的數字代表該指令需要的參數數量)
