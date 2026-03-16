@@ -1,22 +1,25 @@
 # OurScheme
 此專題為中原大學資訊工程系「程式語言」的專題作業<br>
-全部專題包含四個部分，而在這裡放上第兩個部分<br>
-Project 1<br>
-這個部分的功能為，判斷輸入資料的語法是否符合簡單的Scheme語法<br>
-並將所讀到資料用容易看的方式印出來<br>
-Project 2<br>
-實作個個指令的功能，並將指令執行的結果印出來<br>
+全部專題包含四個部分，此專案時做了前兩個部分<br>
 
-## 開發平台
-Windows10
+## 專案說明
+### Project 1<br>
+讀取Input後，判斷該資料是否符合OurScheme的語法<br>
+若**不符合**，將**Error種類印出**，並**標示出該Error的位置**<br>
+若**符合**，則僅將**Input資料處理成OurScheme的Output形式顯示**。<br>
+### Project 2<br>
+基於Project 1，讀取Input後，判斷該資料是否符合OurScheme的語法外，還需檢查是否符合各項指令所需的參數格式<br>
+若**不符合**，將**Error種類印出**，並**標示出該Error的位置**<br>
+若**符合**，則僅將**Input資料根據輸入的指令處理**，**隨後再以OurScheme的Output形式顯示**。<br>
 
 ## 開發環境
-Dev C++
+系統：Windows10<br>
+工具：Dev C++、VSCode<br>
 
 ## 檔案說明
 * OurSchemeProj2-UTF-8.txt 為 Project 2 的詳細說明，包含了各個指令的功能
-* P2_0606.cpp 為 Project 2 的程式碼
-* P2_0606.exe 為 Project 2 的執行檔
+* P2_Proj2.cpp 為 Project 2 的程式碼
+* P2_proj2.exe 為 Project 2 的執行檔
 * testData 為測試的輸入檔案
 
 ## 功能
