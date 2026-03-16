@@ -1,0 +1,95 @@
+; 1. Constructors
+(cons 5 4) 
+
+(cons 6
+        nil
+  )
+
+(CONS 2 4)
+
+(list 3 (4 5))
+
+(list 3 '(4 5))
+
+; 2. Bypassing the default evaluation
+ '(3 4 5)
+
+ (quote (3 (4 5)))
+
+; 3. The binding of a symbol to an S-expression
+(define hello '(1 2 . 3))
+
+hello
+
+(cons hello 
+        4
+  )   
+
+; 4. Part accessors
+(car '((3 4) 5 . 6)  )
+
+(cdr '((3 4) 5)  ) 
+
+; 5. Primitive predicates
+(atom? 3)
+(atom? '(1 . 2))
+(pair? '(3 4))
+(pair? "Hello, there!")
+(list? 3)
+(list? '(1 2 3))
+(null? ()) 
+(null? '(3 . 4))
+(integer? 3)
+(integer? 3.4)
+(real? 3)
+(number? 3)
+(number? 3.4)
+(string? "Hi") 
+(string? +3.4)
+(boolean? #t)
+(boolean? #f)
+(boolean? '(3 . 4))
+(symbol? 'abc)
+(symbol? 3)
+
+; 6. Basic arithmetic, logical and string operations
+(+ 3 7)
+(+ 3 7 10 25)
+(/ 5 2.0)
+(> 3 2)
+(string-append "Hello," " there!")
+(string>? "az" "aw")
+(string=? "az" (string-append "a" "z"))
+
+; 7. Eqivalence tester
+(eqv? 3 3)
+(define a '(3 4))
+(eqv? a a)
+(eqv? a '(3 4))
+(equal? a '(3 4))
+(define b a)
+(eqv? a b)
+
+; 8. Sequencing and functional composition
+(begin  3  4  5)
+(begin (+ 3 5) (- 4 5) (* d d) )
+
+; 9. Conditionals
+(if #t 30)
+(if #f 30)
+(define a nil)
+(if a 'good 'bad)
+(if (not a) 'good 'bad)
+(define a 5)
+(if a 'good 'bad)
+
+(cond ((> 3 a) 'bad)
+      ((> a 3) 'good)
+      (else "What happened?")
+) 
+
+; 10. clean-environment
+(define a 5)
+a
+(clean-environment)
+a
